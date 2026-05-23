@@ -13,4 +13,4 @@ echo "sum is: $SUM"
 #array
 
 MOVIES=("RRR" "Pushpa" "kalki")
-echo "MOVIES are: ${MOVIE[@]}"
+echo "Movies are: ${MOVIES[@]}"
