@@ -9,4 +9,11 @@ if [ $USERID -ne 0 ]; then
 fi
 
 
-echo "I am continuing....."
+#echo "I am continuing....."
+
+
+echo 'installing mtsql"
+dnf install mysqlfhfnfj -y
+
+echo "iam continuing...."
+
