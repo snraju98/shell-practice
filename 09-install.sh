@@ -13,7 +13,12 @@ fi
 
 
 echo "installing mtsql"
-dnf install mysqlfhfnfj -y
+dnf install mysql -y
 
-echo "iam continuing...."
+if [ $? -ne 0 ]; then
+  echo "insatalling mysql is fail"
+  exit 1
+else
+   echo "installing mysql is ....success"
+fi
 
