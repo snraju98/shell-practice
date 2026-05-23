@@ -7,3 +7,10 @@ NUM2=linux
 SUM=$(($NUM1+NUM2))
 
 echo "sum is: $SUM"
+
+
+
+#array
+
+MOVIES=("RRR" "Pushpa" "kalki")
+echo "MOVIES are: ${MOVIE[@]}"
