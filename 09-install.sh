@@ -12,7 +12,7 @@ fi
 #echo "I am continuing....."
 
 
-echo 'installing mtsql"
+echo "installing mtsql"
 dnf install mysqlfhfnfj -y
 
 echo "iam continuing...."
