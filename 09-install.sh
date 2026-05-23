@@ -12,7 +12,7 @@ fi
 #echo "I am continuing....."
 
 
-echo "installing mtsql"
+echo "installing mysql"
 dnf install mysql -y
 
 if [ $? -ne 0 ]; then
