@@ -10,3 +10,6 @@ echo "user home directory: $HOME"
 echo "pid of the current script: $$"
 sleep 5 &
 echo "pid of background command running just now: $!"
+wait $!
+echo "line number: $LINENO"
+echo "script executed in $SECONDS seconds"
