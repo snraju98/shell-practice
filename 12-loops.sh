@@ -33,7 +33,7 @@ do
       dnf install $pacakage -y &>> $LOGS_FILE
       VALIDATE "Installing $pacakage" $?
     else
-     echo "$pacakage already installed... skipping"
+     echo "$TIMESTAMP [INFO] $pacakage already installed ... skipping"
    fi
 done
 
