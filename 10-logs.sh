@@ -14,10 +14,10 @@ fi
 #second arg > exit code
 VALIDATE(){
      if [ $2 -ne 0 ]; then
-      echo "installing mysql is ....failed"
+      echo "installing mysql is ....failed" | tee -a $LOGS_FILE
       exit 1
    else
-      echo "installing my sql is ...succes"
+      echo "installing my sql is ...succes" | tee -a $LOGS_FILE
    fi
 }
 
