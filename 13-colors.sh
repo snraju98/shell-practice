@@ -21,10 +21,10 @@ fi
 #second arg > exit code
 VALIDATE(){
     if [ $2 -ne 0 ]; then 
-       echo $TIMESTAMP [ERROR] "installing $1 is .. $R FAILED $N" | tee -a $LOGS_FILE
+       echo -e $TIMESTAMP [ERROR] "installing $1 is .. $R FAILED $N" | tee -a $LOGS_FILE
        exit 1
     else
-       echo $TIMESTAMP [INFO] "installing $1 is ... $G  SUCCESS $N "   | tee -a $LOGS_FILE
+       echo -e $TIMESTAMP [INFO] "installing $1 is ... $G  SUCCESS $N "   | tee -a $LOGS_FILE
     fi
 }
 
@@ -37,6 +37,6 @@ do
       dnf install $pacakage -y &>> $LOGS_FILE
       VALIDATE "Installing $pacakage" $?
     else
-     echo "$TIMESTAMP [INFO] $pacakage already installed ... $Y SKIPPING $N"
+     echo -e "$TIMESTAMP [INFO] $pacakage already installed ... $Y SKIPPING $N"
    fi
 done
